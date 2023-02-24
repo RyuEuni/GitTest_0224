@@ -7,6 +7,21 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div id="root">
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+  </div>
+
+  <script>
+    let root = document.getElementById('root');
+    root.style.backgroundColor = "yellow";
+
+    for(let i = 0; i < root.children.length; i++){
+      root.children[i].style.color = "blue";
+    }
+  </script>
 </body>
 </html>
