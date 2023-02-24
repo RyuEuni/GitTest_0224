@@ -7,6 +7,28 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div id="root">
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+    <h1>Hello!</h1>
+  </div>
+
+  <script>
+    let root = document.getElementById('root');
+    root.style.backgroundColor = "yellow";
+
+    for(let i = 1; i <= root.children.length; i++){
+
+      if(i % 2 === 0){
+        root.children[i-1].style.color = "blue";
+      }
+      else{
+        root.children[i-1].style.color = "red";
+      }
+
+    }
+  </script>
 </body>
 </html>
